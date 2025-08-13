@@ -1,0 +1,8 @@
+<script>
+let litros = Number(prompt("Litros vendidos:"));
+let tipo = prompt("Tipo (A - álcool, G - gasolina):").toUpperCase();
+let precoLitro = tipo === 'A' ? 1.9 : 2.7;
+let descontoPorLitro = tipo === 'A' ? (litros <= 25 ? 0.02 : 0.04) : (litros <= 25 ? 0.03 : 0.05);
+let valorPago = litros * precoLitro * (1 - descontoPorLitro);
+alert("Valor a pagar: R$" + valorPago.toFixed(2));
+</script>

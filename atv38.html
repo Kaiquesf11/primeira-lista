@@ -1,0 +1,6 @@
+<script>
+let valorProduto = Number(prompt("Valor do produto:"));
+let prestacao = Math.floor((valorProduto - (valorProduto % 2)) / 3);
+let entrada = valorProduto - 2 * prestacao;
+alert(`Entrada: R$${entrada.toFixed(2)}, 2x de R$${prestacao.toFixed(2)}`);
+</script>

@@ -1,0 +1,11 @@
+<script>
+let valorSaque = Number(prompt("Valor para saque:"));
+let notas = [100, 50, 20, 10, 5, 2, 1];
+let resultado = "";
+for (let nota of notas) {
+  let qtd = Math.floor(valorSaque / nota);
+  valorSaque %= nota;
+  if (qtd > 0) resultado += `${qtd} nota(s) de R$${nota}\n`;
+}
+alert(resultado);
+</script>

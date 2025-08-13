@@ -1,0 +1,8 @@
+<script>
+let distancia = Number(prompt("Distância (m):"));
+let vPerm = Number(prompt("Velocidade permitida (m/s):"));
+let aCarro = Number(prompt("Aceleração (m/s²):"));
+let tempo = vPerm / aCarro + (distancia - (vPerm ** 2 / (2 * aCarro))) / vPerm - 3;
+alert("Tempo de abertura do próximo semáforo: " + tempo.toFixed(2) + "s");
+
+</script>

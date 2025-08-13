@@ -1,0 +1,8 @@
+<script>
+let mp1 = Number(prompt("Nota 1:"));
+let mp2 = Number(prompt("Nota 2:"));
+let mp3 = Number(prompt("Nota 3:"));
+let notas = [mp1, mp2, mp3].sort((a, b) => b - a);
+let mediaPond = (notas[0] * 5 + notas[1] * 2.5 + notas[2] * 2.5) / 10;
+alert("Média ponderada: " + mediaPond.toFixed(2));
+</script>

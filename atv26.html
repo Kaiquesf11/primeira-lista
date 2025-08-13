@@ -1,0 +1,7 @@
+<script>
+let idadeDias = Number(prompt("Digite a idade em dias:"));
+let anos = Math.floor(idadeDias / 365);
+let meses = Math.floor((idadeDias % 365) / 30);
+let dias = (idadeDias % 365) % 30;
+alert(`Anos: ${anos}, Meses: ${meses}, Dias: ${dias}`);
+</script>
